@@ -1,0 +1,100 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid rgb(187, 187, 187);
+    padding: 15px;
+    background-color: black;
+    color: wheat;
+}
+.header span{
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    /* margin:5px; */
+    padding: 3px;
+}
+
+.body{
+    flex: 1; 
+    overflow-y: auto;
+    max-height: 500px;
+    /* max-height: 600px;
+    overflow-y: auto; */
+    /* background-color: rgb(194, 178, 158); */
+}
+.body li{
+    list-style: none;
+    margin-left: -2rem;
+    /* margin: 5px;; */
+    font-style: italic;
+    font-size: 1.1rem;
+    /* border: 1px solid rgb(117, 115, 115); */
+    background-color:rgb(255, 255, 255);;
+    padding-left: 5px;
+    margin-top: 0.7rem;
+    width: 75%;
+    color: #000000;
+    border-radius: 5px;
+}
+.body li span{
+    /* border: 1px solid rgb(172, 171, 171); */
+    /* background-color: #ccc; */
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 52%; */
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+.footer button{
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+    width: 200px;
+    border-radius: 4px;
+}
+.footer input:focus {
+    outline: none; /* Removes the default outline */
+    border: 2px solid #007bff; /* Adds a custom border */
+    border-radius: 4px; /* Optional: Adds rounded corners */
+  }
+
+
+
+/* css */
+/* Assuming this is Chatbox.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 97%; /* Make sure the container takes the full height */
+  }
+  
+  .header {
+    /* Style for the header, if needed */
+  }
+  
+  body {
+    flex: 1; /* Makes the body take up the remaining space */
+    overflow-y: auto; /* Allows scrolling if content overflows */
+    padding: 10px; /* Optional padding */
+  }
+  
+  footer {
+    /* Ensures footer stays at the bottom */
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Adjust as needed */
+    border-top: 1px solid #ccc; /* Optional: Adds a top border */
+    background-color: #f9f9f9; /* Optional: Background color for the footer */
+  }
+  

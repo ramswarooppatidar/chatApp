@@ -1,0 +1,166 @@
+.conversationContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.conversation{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap:9rem;
+    /* background-color: #c9c6c6; */
+    border-radius: 5px ;
+    border: 1px solid rgb(215, 212, 212);
+
+}
+.conversation div{
+    /* width:80%; */
+   
+}
+.conversation button{
+    border: none;
+    height: 2rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+}
+
+.scrollableList{
+    margin-left: -3.5rem;
+    margin-top: 2rem;
+    overflow-y: auto;
+    max-height: 700px;
+}
+.scrollableList::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+.truncatedText {
+    white-space: nowrap; 
+    /* Prevent text from wrapping to the next line */
+    overflow: hidden; 
+    /* Hide text that overflows the container */
+    text-overflow: ellipsis; 
+    /* Show ellipsis (...) when text overflows */
+    display: block; 
+    /* Ensure the span is treated as a block-level element */
+    max-width: 200px; 
+    /* Adjust the width as needed */
+}
+  
+.nonActiveLi{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+    border-bottom: 1px solid rgb(237, 237, 237);;
+    padding: 0.8rem;
+    margin:0.1rem;
+    background-color: rgb(250, 253, 255);
+    justify-content: space-between;
+    overflow: hidden;
+    /* height: 3rem; */
+}
+li:hover {
+    /* background-color: rgb(249, 251, 253); */
+    /* background-color: black; */
+    /* color: white; */
+}
+.activeLi{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+    border-bottom: 1px solid rgb(237, 237, 237);;
+    padding: 1rem;
+    margin:0.1rem;
+    /* background-color: rgb(250, 253, 255); */
+    justify-content: space-between;
+    overflow: hidden;
+
+
+    background-color: black;
+    color: white;
+}
+.headingName{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem; /* Adjust the size as needed */
+  font-weight: bold; /* Makes the text bolder */
+}
+.profile{
+    width:10%;
+    height: 10%;
+    /* overflow: hidden; */
+}
+.middle{
+    width :50%;
+    overflow: hidden;
+}
+img{
+    /* border-radius: 10%; */
+    width: 100%; /* Adjust to fit the container's width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container */
+  border-radius: 50%; 
+  border:2px solid black
+    
+}
+.last{
+    /* margin-left: 5rem; */
+}
+
+
+/* serch bar */
+.searchbar{
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+ 
+    
+    /* width:50%; */
+}
+.searchbar div{
+    border: 2px solid rgb(239, 239, 239);
+    border-radius: 1rem;
+    background-color: #f0eeee;
+}
+.searchbar button, input{
+    border: none;
+    height: 2rem;
+    font-size: 1rem;
+    background-color: #fff;
+}
+.searchbar input{
+    padding-left: 1px;
+}
+
+
+
+
+
+/* chat gpt */
+/* Ensure the container has a fixed height and scrolling enabled */
+scrollableList {
+    max-height: 700px; /* Adjust height as needed */
+    overflow-y: auto;
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Make the list items sticky */
+  scrollableList li {
+    /* position: -webkit-sticky;  */
+    position: sticky;
+    top: 0; /* Position from the top of the viewport */
+    background: #fff; /* Ensure background is solid for better visibility */
+    border-bottom: 1px solid #ddd; /* Optional: Add a border for separation */
+    padding: 10px; /* Optional: Add some padding */
+  }
+  
+

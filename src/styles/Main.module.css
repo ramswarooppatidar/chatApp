@@ -1,0 +1,52 @@
+/* .container{
+    display: flex;
+    flex-direction: row;
+}
+.container::-webkit-scrollbar {
+    display: none;
+}
+.sidebar{
+    width:40%;
+    height: 80%;
+}
+.sidebar::-webkit-scrollbar {
+    display: none; 
+  }
+.chatbox{
+    width:68%;
+    height: 100%;
+    background-color: rgb(228, 239, 167);
+} */
+
+
+
+
+/* Ensure the container takes the full height of the viewport */
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling of the entire page */
+    gap:1px;
+  }
+  .container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
+  .sidebar {
+    width: 35%;
+    height: 100%; /* Full height of the container */
+    overflow-y: auto; /* Enable vertical scrolling within the sidebar */
+    border: 1px solid rgb(228, 228, 228);
+  }
+  .sidebar::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  .chatbox {
+    width: 65%;
+    height: 100%; /* Full height of the container */
+    /* background-color: rgb(228, 239, 167); */
+    overflow: hidden; /* Prevent scrolling in the chatbox */
+    border: 1px solid rgb(228, 228, 228);
+  }
+  
